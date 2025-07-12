@@ -1,0 +1,341 @@
+/*-------------------------------------------------------ASIGNACIONES GENERALES-------------------------------------------------------*/
+:root {
+    --color-blanco: #FFFFFF;
+    --color-grafito: #212529;
+    --color-azul-medianoche: #1A2B42;
+    --color-azul-medianoche-hover: #1a2b429f;
+    --color-gris-claro: #E9ECEF;
+    --color-azul-acero: #5A7B9B;
+    --color-verde-bosque: #0f4e20;
+    --color-rojo-ladrillo: #CC3333;
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--color-gris-claro)!important;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    cursor: pointer;
+    outline: none;
+}
+
+input::placeholder{
+    color: #788ca0;
+}
+
+
+/*--------------------ESTA PARTE CORRESPONDE A LA BARRA DE NAVEGACION QUE ESTA EN TODAS LAS PAGINAS NAV-BAR GENERAL--------------------*/
+.encabezado-header{
+    background-color: #395c78;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 85px;
+    min-height: 85px!important;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+.encabezado-elementos-derecha{
+    margin-left: auto;
+    
+}
+
+.encabezado-div-logo{
+    cursor: pointer;
+
+}
+
+.encabezado-img-logo{
+    display: block;
+    height: 160px;
+    width: auto;
+    border-radius: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    
+}
+
+
+
+.encabezado-li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.encabezado-li:hover{
+    transform: scale(1.1);
+}
+
+.encabezado-ul{
+    list-style: none;
+}
+
+.encabezado-a{
+    text-decoration: none;
+    font-size: 700;
+    color:#ECF0F1;
+}
+
+.encabezado-a:hover{
+    color: var(--color-gris-claro);
+    text-shadow: 1px 1px 10px white;
+}
+
+.encabezado-button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #E9ECEF;
+    padding: 9px;
+    background: var(--color-azul-acero);
+    border-radius: 50px;
+    cursor:pointer;
+    border: none;
+    transition: all 0.3s;
+    
+}
+
+.encabezado-button:hover{
+    color: #ECF0F1;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 10px white;
+}
+
+.texto-header{
+    font-family: GFS Didot;
+    color: white;
+    font-size: 22px;
+    margin-left: 0px;
+    font-weight:400;
+    margin-right: 60px;
+}
+
+/*----------------------------------------DE ACA PARA ABAJO SE LE DA ESTILO AL "INDEX.PHP"----------------------------------------*/
+.index-body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-div-sesion{
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 12%;
+    height: 43%;
+    width: 24%;
+    min-height: 300px;
+    padding: 2%;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: var(--color-blanco); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.index-h1{
+    margin: 0;
+    margin-top: 4%;
+    color: var(--color-grafito);
+}
+
+.index-input{
+    width: 100%;
+    height: 30%;
+    padding: 4%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-gris-claro);
+    border: 2.5px solid transparent;
+    color: var(--color-grafito);
+}
+
+.index-input:focus{
+    border: 2.5px solid var(--color-azul-medianoche)!important; 
+}
+
+.index-input:hover{
+    border: 2.5px solid var(--color-azul-medianoche-hover);
+}
+
+.index-input-submit{
+    width: 80%;
+    height: 28%;
+    margin-top: 10%;
+    padding: 1%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-azul-medianoche);
+    color: white;
+    border: 2.5px solid transparent;
+}
+
+.index-input-submit:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.index-input-submit:focus{
+    box-shadow: 1px 3px 10px 0 #0000008f;
+}
+
+.index-label{
+    margin-right: 90%;
+    padding: 1%;
+    color: var(--color-grafito);
+}
+
+.index-p{
+    color: var(--color-grafito); 
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+.index-p-error{
+    margin: 1% auto;
+    
+}
+
+.index-errorMsg{
+    color: var(--color-rojo-ladrillo);
+    font-size: large;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.index-a{
+    color: var(--color-verde-bosque);
+    text-decoration: none!important
+}
+
+.index-a:hover{
+    text-shadow: 1px 1px 20px #00ff44;
+}
+
+/*----------------------------------------DE ACA PARA ABAJO SE LE DA ESTILO AL "REGISTRO.HTML"----------------------------------------*/
+.registro-body{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gris-claro);
+}
+
+.registro-div-formulario{
+    
+    min-height: 600px;
+    width: 40%;
+    margin: auto auto;
+    margin-bottom: 20px;
+    padding: 2%;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: var(--color-blanco); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding-top: 5px;
+}
+
+.registro-div-nombre-apellido-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    gap: 3%;
+    margin-bottom: 3%;
+}
+
+.registro-h1{
+    margin: 0;
+    margin-top: 0%;
+    color: var(--color-grafito);
+    padding: 0px;
+}
+
+.registro-input{
+    width: 100%;
+    height: 18%;
+    padding: 2%;
+    margin-bottom: 3%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-gris-claro);
+    border: 2.5px solid transparent;
+    color: var(--color-grafito)
+}
+
+.registro-input-nombre, .registro-input-apellido{
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-gris-claro);
+    border: 2.5px solid transparent;
+    color: var(--color-grafito);
+}
+
+.contraseña{
+    margin-bottom: 4%;
+}
+
+.registro-input-submit{
+    width: 60%;
+    height: 18%;
+    margin-top: 1%;
+    padding: 2%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-azul-medianoche);
+    color: white; 
+    border: 2.5px solid transparent;
+}
+
+.registro-p{
+    margin: auto;
+    color: var(--color-grafito); 
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.registro-a{
+    color: var(--color-verde-bosque);
+    text-decoration: none;
+}
+
+.registro-a:hover{
+    text-shadow: 1px 1px 20px #00ff44;
+}
+
+.registro-input-apellido:focus, .registro-input-nombre:focus, .registro-input:focus{
+    border: 2.5px solid #1A5276!important;
+}
+
+.registro-input-apellido:hover, .registro-input-nombre:hover, .registro-input:hover{
+    border: 2.5px solid #1a53766e;
+}
+
+.registro-input-submit:hover{
+    text-shadow: 0 0 5px white;
+}
+
+.registro-input-submit:focus{
+    box-shadow: 1px 3px 10px 0 #0000008f;
+}

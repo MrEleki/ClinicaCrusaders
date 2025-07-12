@@ -1,0 +1,99 @@
+ body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #395c78;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .error {
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        .success {
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 20px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #395c78; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        tr:hover { background-color: #e9ecef; }
+        .no-citas { text-align: center; color: #777; font-size: 1.2em; padding: 40px; }
+        .estado { padding: 5px 10px; border-radius: 15px; color: white; font-size: 0.9em; text-transform: capitalize; }
+        .estado.pendiente { background-color: #f59e0b; }
+        .estado.aceptada { background-color: #10b981; }
+        .estado.cancelada { background-color: #ef4444; }
+        .info-estados { margin-top: 30px; padding: 15px; background-color: #e9ecef; border-left: 4px solid #395c78; color: #34495e; }
+        .info-estados h4 { margin-top: 0; color: #2c3e50; }
+        .info-estados ul { padding-left: 20px; margin-bottom: 0; }
+        .btn-agendar { display: block; width: fit-content; margin: 30px auto 10px auto; padding: 12px 25px; background-color: #395c78; color: white; text-decoration: none; border-radius: 4px; text-align: center; font-size: 16px; transition: all 0.3s ease; }
+        .btn-agendar:hover { background-color: #2980b9; transform: scale(1.05); }
+
+        /* Estilos para los botones de acción en la tabla */
+        .btn-accion {
+            padding: 6px 12px;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            margin: 2px;
+            display: inline-block;
+            transition: all 0.2s ease-in-out;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-accion.reagendar { background-color: #3498db; }
+        .btn-accion.reagendar:hover { background-color: #2980b9; }
+        .btn-accion.cancelar { background-color: #e74c3c; }
+        .btn-accion.cancelar:hover { background-color: #c0392b; }
+        .direccion-consultorio {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
